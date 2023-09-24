@@ -14,7 +14,7 @@ a{
   text-decoration: none
 }
 #container{
-  border: 2px solid white;
+  
   height: 712px;
   width: 360px;
   margin: auto;
@@ -62,9 +62,4 @@ a{
   align-items: flex-start;
   padding: 24px;
   gap: 16px;
-}
-footer{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 }
