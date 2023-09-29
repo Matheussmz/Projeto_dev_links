@@ -20,16 +20,16 @@ a{
   height: 712px;
   width: 360px;
   margin: auto;
+  padding-top: 24px;
 }
 #profile{
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 #profile img{
   width: 112px;
   height: 111px;
-  padding-top: 20px;
+  padding: 20px;
 }
 #links{
   margin-top: 30px;
