@@ -1,74 +1,80 @@
 @charset "UTF-8";
-body{
-  /*background-image: url(bg_projeto/Background.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;*/
-  color: white;
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@500 & display=swap');
 
-  background:url(bg_projeto/Background.jpg) no-repeat top center/cover;
-}
 *{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    box-sizing: border-box;
+    font-family:'Inter', sem serifa;
 }
-a{
-  text-decoration: none
+body{
+    background: url(bg_projeto/Background.jpg) no-repeat top center/cover;
+    height: 100vh;
 }
+
 #container{
-  
-  height: 712px;
-  width: 360px;
-  margin: auto;
-  padding-top: 24px;
+    width: 360px;
+    height: 720px;
+    text-align: center;
+    padding: 0px 24px;
+    margin: 56px auto 0px;
 }
 #profile{
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 24px;
 }
 #profile img{
-  width: 112px;
-  height: 111px;
-  padding: 20px;
+    width: 112px;
 }
-#links{
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 16px 24px;
-  gap: 16px;
-  width:340px;
-  height:320px;
-
+#profile p{
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
 }
-#links button{
-  box-sizing: border-box;
-  color: white;
-  background-color:rgba(255, 255, 255, 0.1) ;
-  border: 1px solid rgb(255,255,255,0.5);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 24px;
-  gap:8px;
-  width: 302px;
-  height: 56px;
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+ul li a{
+    display: flex;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border:2px solid rgba(255, 255, 255, 0.5);
+    padding:16px 24px;
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    transition:background 0.5s;
+}
+ul li a:hover{
+    background: rgba(255, 255, 255, 0.05);
+    border:1.5px solid rgba(255, 255, 255, 1) ;
 }
 #social_links{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 16px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin-top: 30px;
+    padding: 24px 0;
+}
+#social_links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+#social_links a:hover{
+    background: rgba(255, 255, 255, 0.2);
 }
 footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
+    text-align: center;
+    font-size: 14px;
 }
