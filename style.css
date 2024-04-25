@@ -67,6 +67,7 @@ body{
     transform: translateY(-50%);
     top: 50%;
     left: 0;
+    border: 1px solid black;
 }
 .light #switch button{
     right:0;
